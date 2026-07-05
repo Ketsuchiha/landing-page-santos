@@ -235,22 +235,25 @@
 
         <div class="certificate-grid">
           <article class="certificate-card">
+            <img class="certificate-preview" src="Assets/certificate-previews/google-analytics-certification.png" alt="Preview of Google Analytics Certification" />
             <div class="certificate-badge">PDF</div>
             <h3>Google Analytics Certification</h3>
             <p>Digital marketing and analytics fundamentals.</p>
-            <a href="Certificates/Google%20Analytics%20Certification.pdf" download class="work-link" data-pdf="Certificates/Google%20Analytics%20Certification.pdf">Preview or download</a>
+            <a href="Certificates/Google%20Analytics%20Certification.pdf" class="work-link" data-preview-image="Assets/certificate-previews/google-analytics-certification.png" data-preview-alt="Preview of Google Analytics Certification" data-pdf="Certificates/Google%20Analytics%20Certification.pdf" data-pdf-title="Google Analytics Certification" data-pdf-description="Digital marketing and analytics fundamentals.">View certificate</a>
           </article>
           <article class="certificate-card">
+            <img class="certificate-preview" src="Assets/certificate-previews/data-science-essentials-with-python.png" alt="Preview of Data Science Essentials with Python" />
             <div class="certificate-badge">PDF</div>
             <h3>Data Science Essentials with Python</h3>
             <p>Python-based data exploration and essential data science concepts.</p>
-            <a href="Certificates/Data_Science_Essentials_with_Python_certificate_santosjuriellamae15-gmail-com_5a689df4-3a8c-45d5-9806-d5ee442314b1%20%281%29.pdf" download class="work-link" data-pdf="Certificates/Data_Science_Essentials_with_Python_certificate_santosjuriellamae15-gmail-com_5a689df4-3a8c-45d5-9806-d5ee442314b1%20%281%29.pdf">Preview or download</a>
+            <a href="Certificates/Data_Science_Essentials_with_Python_certificate_santosjuriellamae15-gmail-com_5a689df4-3a8c-45d5-9806-d5ee442314b1%20%281%29.pdf" class="work-link" data-preview-image="Assets/certificate-previews/data-science-essentials-with-python.png" data-preview-alt="Preview of Data Science Essentials with Python" data-pdf="Certificates/Data_Science_Essentials_with_Python_certificate_santosjuriellamae15-gmail-com_5a689df4-3a8c-45d5-9806-d5ee442314b1%20%281%29.pdf" data-pdf-title="Data Science Essentials with Python" data-pdf-description="Python-based data exploration and essential data science concepts.">View certificate</a>
           </article>
           <article class="certificate-card">
+            <img class="certificate-preview" src="Assets/certificate-previews/google-video-ads-certification.png" alt="Preview of Google Video Ads Certification" />
             <div class="certificate-badge">PDF</div>
             <h3>Google Video Ads Certification</h3>
             <p>Video campaign and ad platform fundamentals.</p>
-            <a href="Certificates/Google%20Video%20Ads%20Certification.pdf" download class="work-link" data-pdf="Certificates/Google%20Video%20Ads%20Certification.pdf">Preview or download</a>
+            <a href="Certificates/Google%20Video%20Ads%20Certification.pdf" class="work-link" data-preview-image="Assets/certificate-previews/google-video-ads-certification.png" data-preview-alt="Preview of Google Video Ads Certification" data-pdf="Certificates/Google%20Video%20Ads%20Certification.pdf" data-pdf-title="Google Video Ads Certification" data-pdf-description="Video campaign and ad platform fundamentals.">View certificate</a>
           </article>
         </div>
       </div>
@@ -264,7 +267,8 @@
           <p>A short version of my profile is ready to save. It includes my frontend focus, core stack, and academic status as a fresh graduate.</p>
         </div>
         <div class="resume-actions">
-          <a class="button button-primary" href="Juriella_Mae_Santos%20Resume.pdf" download="Juriella_Mae_Santos Resume.pdf">Download Resume</a>
+          <a class="button button-primary" href="resume.html">View Resume</a>
+          <a class="button button-secondary" href="Juriella_Mae_Santos%20Resume.pdf" download="Juriella_Mae_Santos Resume.pdf">Download PDF</a>
           <a class="button button-secondary" href="#contact">Contact Me</a>
         </div>
       </div>
@@ -299,7 +303,18 @@
     <div class="modal-backdrop" data-modal-close></div>
     <div class="modal-panel" role="dialog" aria-modal="true" aria-label="Certificate preview">
       <button class="modal-close" type="button" data-modal-close aria-label="Close preview">×</button>
-      <iframe class="modal-frame" data-modal-frame title="Certificate preview"></iframe>
+      <div class="modal-layout">
+        <div class="modal-preview-shell">
+          <img class="modal-preview-image" data-modal-image alt="Certificate preview" />
+        </div>
+        <div class="modal-meta">
+          <div class="certificate-badge">Certificate</div>
+          <h3 data-modal-title>Preview</h3>
+          <p data-modal-description>Choose a certificate to render its preview.</p>
+          <a class="button button-primary modal-download" data-modal-download href="#" target="_blank" rel="noreferrer noopener" download>Download PDF</a>
+          <a class="button button-secondary modal-download-secondary" data-modal-open href="#" target="_blank" rel="noreferrer noopener">Open PDF</a>
+        </div>
+      </div>
     </div>
   </div>
 

@@ -32,6 +32,28 @@
       padding: 32px;
       box-shadow: 0 18px 50px rgba(20,20,20,0.08);
     }
+    .profile-head {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      padding-bottom: 24px;
+      margin-bottom: 24px;
+      border-bottom: 1px solid rgba(20,20,20,0.1);
+    }
+    .profile-photo {
+      width: 92px;
+      height: 92px;
+      border-radius: 24px;
+      object-fit: cover;
+      object-position: center top;
+      border: 1px solid rgba(20,20,20,0.08);
+      box-shadow: 0 14px 32px rgba(20,20,20,0.12);
+      background: rgba(255,255,255,0.8);
+      flex: 0 0 auto;
+    }
+    .profile-copy {
+      min-width: 0;
+    }
     h1, h2, h3 {
       font-family: Georgia, 'Times New Roman', serif;
       line-height: 1.1;
@@ -92,8 +114,13 @@
 <body>
   <div class="page">
     <div class="card">
-      <h1>Juriella Mae C. Santos</h1>
-      <p class="subtitle">Known as Jur · Frontend Developer · Fresh Graduate</p>
+      <div class="profile-head">
+        <img class="profile-photo" src="Assets/Profile%20Pic.png" alt="Portrait of Juriella Mae C. Santos" />
+        <div class="profile-copy">
+          <h1>Juriella Mae C. Santos</h1>
+          <p class="subtitle">Known as Jur · Frontend Developer · Fresh Graduate</p>
+        </div>
+      </div>
 
       <div class="section">
         <h2>Profile</h2>

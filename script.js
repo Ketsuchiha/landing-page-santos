@@ -3,7 +3,11 @@ const cursorGlow = document.querySelector('.cursor-glow');
 const revealItems = document.querySelectorAll('.reveal');
 const slider = document.querySelector('[data-slider]');
 const modal = document.querySelector('[data-modal]');
-const modalFrame = document.querySelector('[data-modal-frame]');
+const modalImage = document.querySelector('[data-modal-image]');
+const modalTitle = document.querySelector('[data-modal-title]');
+const modalDescription = document.querySelector('[data-modal-description]');
+const modalDownload = document.querySelector('[data-modal-download]');
+const modalOpen = document.querySelector('[data-modal-open]');
 const modalCloseTargets = document.querySelectorAll('[data-modal-close]');
 const certificateLinks = document.querySelectorAll('[data-pdf]');
 
@@ -66,15 +70,26 @@ if (slider) {
 const closeModal = () => {
   modal.classList.remove('is-open');
   modal.setAttribute('aria-hidden', 'true');
-  modalFrame.removeAttribute('src');
+  modalImage.removeAttribute('src');
+  modalImage.alt = 'Certificate preview';
+  modalDownload.href = '#';
+  modalOpen.href = '#';
 };
 
 certificateLinks.forEach((link) => {
   link.addEventListener('click', (event) => {
     event.preventDefault();
-    modalFrame.src = `${link.dataset.pdf}#view=FitH`;
     modal.classList.add('is-open');
     modal.setAttribute('aria-hidden', 'false');
+    modalTitle.textContent = link.dataset.pdfTitle || link.textContent.trim();
+    modalDescription.textContent = link.dataset.pdfDescription || '';
+    modalImage.src = link.dataset.previewImage || link.href;
+    modalImage.alt = link.dataset.previewAlt || `${modalTitle.textContent} preview`;
+    modalDownload.href = link.dataset.pdf;
+    modalOpen.href = link.dataset.pdf;
+    modalOpen.textContent = 'Open PDF';
+
+    modalDownload.textContent = 'Download PDF';
   });
 });
 
