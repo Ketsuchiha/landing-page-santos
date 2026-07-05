@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio landing page for Juriella Mae C. Santos, a frontend-focused IT graduate." />
+  <title>Juriella Mae C. Santos | Jur</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="noise"></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+  <div class="scroll-progress" aria-hidden="true"><span></span></div>
+
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="Go to top">
+      <span class="brand-mark">J</span>
+      <span class="brand-text">
+        <strong>Juriella Mae</strong>
+        <small>Frontend Portfolio</small>
+      </span>
+    </a>
+
+    <nav class="nav" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#work">Work</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="hero section reveal">
+      <div class="hero-copy">
+        <p class="eyebrow">Fresh Graduate · Frontend developer</p>
+        <h1>
+          Juriella Mae C. Santos
+          <span>Jur</span>
+        </h1>
+        <p class="lead">
+          I design and build clean, responsive, and user-friendly interfaces with a minimalist feel and motion that supports the story instead of distracting from it.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button button-primary" href="#work">View Work</a>
+          <a class="button button-secondary" href="#contact">Let’s Talk</a>
+        </div>
+
+        <ul class="hero-facts" aria-label="Quick facts">
+          <li><strong>HTML</strong><span>Strong</span></li>
+          <li><strong>CSS</strong><span>Strong</span></li>
+          <li><strong>JavaScript</strong><span>Strong</span></li>
+          <li><strong>PHP</strong><span>Average</span></li>
+          <li><strong>Python</strong><span>Average</span></li>
+          <li><strong>SQL</strong><span>Database</span></li>
+        </ul>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <div class="orb orb-one"></div>
+        <div class="orb orb-two"></div>
+        <div class="portrait-frame">
+          <img src="Assets/Profile%20Pic.png" alt="Portrait of Juriella Mae C. Santos" class="portrait-image" />
+        </div>
+        <div class="profile-card floaty">
+          <div class="profile-card-top">
+            <span class="status-dot"></span>
+            <span>Open to frontend opportunities</span>
+          </div>
+          <div class="profile-name">Jur</div>
+          <p>Turning ideas into clear, elegant interfaces.</p>
+        </div>
+        <div class="stats-card floaty delay">
+          <span>Focus</span>
+          <strong>UI polish + interaction</strong>
+          <small>Minimal design, smooth transitions, and practical usability.</small>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section about reveal">
+      <div class="section-label">About</div>
+      <div class="section-content split-layout">
+        <div>
+          <h2>Built for clarity, motion, and clean structure.</h2>
+        </div>
+        <div>
+          <p>
+            I’m Juriella Mae C. Santos, also called Jur. I’m graduating with an IT background and I focus on frontend development because I enjoy shaping interfaces that feel simple, useful, and visually balanced.
+          </p>
+          <p>
+            My strength is in translating ideas into responsive pages with thoughtful spacing, readable hierarchy, and subtle animation that feels intentional.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section skills reveal">
+      <div class="section-label">Skills</div>
+      <div class="section-content">
+        <div class="skills-grid">
+          <article class="skill-card">
+            <h3>Frontend</h3>
+            <p>HTML, CSS, JavaScript, responsive layouts, and motion-driven UI.</p>
+          </article>
+          <article class="skill-card">
+            <h3>Backend Basics</h3>
+            <p>Average knowledge in PHP and Python for simple logic and integration.</p>
+          </article>
+          <article class="skill-card">
+            <h3>Data</h3>
+            <p>SQL for querying, organizing, and understanding structured data.</p>
+          </article>
+        </div>
+
+        <div class="ticker" aria-label="Technical highlights">
+          <div class="ticker-track">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>Responsive Design</span>
+            <span>UI Animation</span>
+            <span>PHP</span>
+            <span>Python</span>
+            <span>SQL</span>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>Responsive Design</span>
+            <span>UI Animation</span>
+            <span>PHP</span>
+            <span>Python</span>
+            <span>SQL</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="work" class="section work reveal">
+      <div class="section-label">Portfolio</div>
+      <div class="section-content">
+        <div class="work-header">
+          <h2>Selected strengths</h2>
+          <p>Simple structure, careful spacing, and interaction that guides the eye. A few pieces use photo-style visuals to keep the gallery feeling real and lived-in.</p>
+        </div>
+
+        <div class="work-grid gallery-grid">
+          <article class="work-card">
+            <div class="work-media photo-card photo-one" role="img" aria-label="Clean desk with a laptop and code editor"></div>
+            <span class="work-index">01</span>
+            <h3>Landing pages</h3>
+            <p>Focused hero sections that introduce a brand or personal story quickly.</p>
+            <a href="#contact" class="work-link">Discuss a similar page</a>
+          </article>
+          <article class="work-card">
+            <div class="work-media project-preview flutter-preview" role="img" aria-label="Flutter project preview card"></div>
+            <span class="work-index">02</span>
+            <h3>Character Information System</h3>
+            <p>Simple Flutter project with character data browsing and a clean system-style interface.</p>
+            <a href="https://character-information-system.web.app" target="_blank" rel="noreferrer noopener" class="work-link">Open live project</a>
+          </article>
+          <article class="work-card">
+            <div class="work-media photo-card photo-two" role="img" aria-label="Modern workspace with design tools"></div>
+            <span class="work-index">03</span>
+            <h3>Responsive UI</h3>
+            <p>Layouts that adapt smoothly to desktop and mobile without clutter.</p>
+            <a href="#skills" class="work-link">See technical skills</a>
+          </article>
+          <article class="work-card">
+            <div class="work-media project-preview student-preview" role="img" aria-label="Student info app preview card"></div>
+            <span class="work-index">04</span>
+            <h3>Student Info App</h3>
+            <p>A Vue-based frontend demo for browsing student snapshots and live API data.</p>
+            <a href="https://tubular-mousse-105200.netlify.app" target="_blank" rel="noreferrer noopener" class="work-link">Open live project</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="sgod" class="section sgod reveal">
+      <div class="section-label">Featured Project</div>
+      <div class="section-content">
+        <div class="work-header">
+          <h2>SGOD School Permit System</h2>
+          <p>Real screenshots from the permit system showing dashboard views, permit editing, trash bin management, and location tracking.</p>
+        </div>
+
+        <div class="sgod-slider" data-slider>
+          <div class="sgod-stage">
+            <img
+              class="sgod-stage-image"
+              data-slider-image
+              src="Assets/Screenshot%202026-04-28%20124503.png"
+              alt="SGOD School Permit System dashboard with summary cards and school map"
+            />
+            <div class="sgod-stage-overlay">
+              <span class="sgod-stage-tag" data-slider-tag>Dashboard overview</span>
+              <p data-slider-caption>Summary cards, filters, and permit map.</p>
+            </div>
+            <button class="slider-arrow slider-prev" type="button" data-slider-prev aria-label="Previous image">‹</button>
+            <button class="slider-arrow slider-next" type="button" data-slider-next aria-label="Next image">›</button>
+          </div>
+
+          <div class="sgod-thumbs" data-slider-thumbs>
+            <button class="sgod-thumb is-active" type="button" data-slide="0" data-title="Dashboard overview" data-caption="Summary cards, filters, and permit map." data-alt="SGOD School Permit System dashboard with summary cards and school map" data-src="Assets/Screenshot%202026-04-28%20124503.png">
+              <img src="Assets/Screenshot%202026-04-28%20124503.png" alt="Dashboard overview thumbnail" />
+            </button>
+            <button class="sgod-thumb" type="button" data-slide="1" data-title="Trash bin" data-caption="Deleted records and restore actions." data-alt="SGOD School Permit System trash bin view with deleted school records" data-src="Assets/Screenshot%202026-04-28%20125111.png">
+              <img src="Assets/Screenshot%202026-04-28%20125111.png" alt="Trash bin thumbnail" />
+            </button>
+            <button class="sgod-thumb" type="button" data-slide="2" data-title="Settings" data-caption="Backup, restore, and notification controls." data-alt="SGOD School Permit System settings view" data-src="Assets/Screenshot%202026-04-28%20125225.png">
+              <img src="Assets/Screenshot%202026-04-28%20125225.png" alt="Settings thumbnail" />
+            </button>
+            <button class="sgod-thumb" type="button" data-slide="3" data-title="School locations" data-caption="Map clustering and permit browsing." data-alt="SGOD School Permit System school locations map and list" data-src="Assets/Screenshot%202026-04-22%20163014.png">
+              <img src="Assets/Screenshot%202026-04-22%20163014.png" alt="School locations thumbnail" />
+            </button>
+            <button class="sgod-thumb" type="button" data-slide="4" data-title="Permit edit" data-caption="Permit verification and record updates." data-alt="SGOD School Permit System permit verification and edit screen" data-src="Assets/Screenshot%202026-04-22%20162807.png">
+              <img src="Assets/Screenshot%202026-04-22%20162807.png" alt="Permit edit thumbnail" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="certificates" class="section certificates reveal">
+      <div class="section-label">Certificates</div>
+      <div class="section-content">
+        <div class="work-header">
+          <h2>Certificates and achievements</h2>
+          <p>Downloadable proof of learning and specialization, kept in a simple card layout for quick scanning.</p>
+        </div>
+
+        <div class="certificate-grid">
+          <article class="certificate-card">
+            <div class="certificate-badge">PDF</div>
+            <h3>Google Analytics Certification</h3>
+            <p>Digital marketing and analytics fundamentals.</p>
+            <a href="Certificates/Google%20Analytics%20Certification.pdf" download class="work-link" data-pdf="Certificates/Google%20Analytics%20Certification.pdf">Preview or download</a>
+          </article>
+          <article class="certificate-card">
+            <div class="certificate-badge">PDF</div>
+            <h3>Data Science Essentials with Python</h3>
+            <p>Python-based data exploration and essential data science concepts.</p>
+            <a href="Certificates/Data_Science_Essentials_with_Python_certificate_santosjuriellamae15-gmail-com_5a689df4-3a8c-45d5-9806-d5ee442314b1%20%281%29.pdf" download class="work-link" data-pdf="Certificates/Data_Science_Essentials_with_Python_certificate_santosjuriellamae15-gmail-com_5a689df4-3a8c-45d5-9806-d5ee442314b1%20%281%29.pdf">Preview or download</a>
+          </article>
+          <article class="certificate-card">
+            <div class="certificate-badge">PDF</div>
+            <h3>Google Video Ads Certification</h3>
+            <p>Video campaign and ad platform fundamentals.</p>
+            <a href="Certificates/Google%20Video%20Ads%20Certification.pdf" download class="work-link" data-pdf="Certificates/Google%20Video%20Ads%20Certification.pdf">Preview or download</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="resume" class="section resume reveal">
+      <div class="section-label">Resume</div>
+      <div class="section-content resume-panel">
+        <div>
+          <h2>Download my resume.</h2>
+          <p>A short version of my profile is ready to save. It includes my frontend focus, core stack, and academic status as a fresh graduate.</p>
+        </div>
+        <div class="resume-actions">
+          <a class="button button-primary" href="Juriella_Mae_Santos%20Resume.pdf" download="Juriella_Mae_Santos Resume.pdf">Download Resume</a>
+          <a class="button button-secondary" href="#contact">Contact Me</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section quote reveal">
+      <div class="quote-box">
+        <p>“Minimal design works best when every motion has a purpose.”</p>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact reveal">
+      <div class="section-label">Contact</div>
+      <div class="section-content contact-panel">
+        <div>
+          <h2>Let’s build something clean and memorable.</h2>
+          <p>Available for frontend-focused opportunities, collaboration, and portfolio projects.</p>
+        </div>
+        <div class="contact-links">
+          <a href="mailto:santosjuriellame15@gmail.com">santosjuriellame15@gmail.com</a>
+          <a href="#home">Back to top</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Juriella Mae C. Santos · Jur</p>
+  </footer>
+
+  <div class="modal" data-modal aria-hidden="true">
+    <div class="modal-backdrop" data-modal-close></div>
+    <div class="modal-panel" role="dialog" aria-modal="true" aria-label="Certificate preview">
+      <button class="modal-close" type="button" data-modal-close aria-label="Close preview">×</button>
+      <iframe class="modal-frame" data-modal-frame title="Certificate preview"></iframe>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
