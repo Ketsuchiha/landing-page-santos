@@ -315,20 +315,22 @@ main {
 
 .hero-visual {
   position: relative;
-  min-height: 560px;
+  min-height: 620px;
+  padding-block: 28px;
   display: grid;
   place-items: center;
 }
 
 .portrait-frame {
   position: absolute;
-  width: min(360px, 70vw);
-  aspect-ratio: 4 / 5;
+  width: min(388px, 72vw);
+  aspect-ratio: 4 / 5.2;
   border-radius: 34px;
   overflow: hidden;
   border: 1px solid rgba(19, 19, 19, 0.08);
   box-shadow: 0 26px 70px rgba(24, 18, 10, 0.18);
   background: rgba(255, 255, 255, 0.6);
+  animation: portrait-breathe 8s ease-in-out infinite;
 }
 
 .portrait-frame::after {
@@ -339,12 +341,24 @@ main {
   pointer-events: none;
 }
 
+.portrait-frame::before {
+  content: "";
+  position: absolute;
+  inset: -35%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.34), transparent 55%);
+  mix-blend-mode: screen;
+  opacity: 0.22;
+  animation: portrait-glow 10s ease-in-out infinite;
+  pointer-events: none;
+}
+
 .portrait-image {
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center top;
+  object-position: center 14%;
+  transform: scale(1.03);
 }
 
 .orb {
@@ -380,14 +394,17 @@ main {
 }
 
 .profile-card {
-  top: 7%;
-  left: 2%;
+  top: 0;
+  left: -4%;
+  max-width: 300px;
+  transform: rotate(-1deg);
 }
 
 .stats-card {
-  right: 0;
-  bottom: 10%;
-  max-width: 280px;
+  right: -4%;
+  bottom: 4%;
+  max-width: 290px;
+  transform: rotate(1deg);
 }
 
 .profile-card-top {
@@ -1000,6 +1017,61 @@ main {
   transform: translateY(0);
 }
 
+.hero.reveal.visible .eyebrow,
+.hero.reveal.visible h1,
+.hero.reveal.visible .lead,
+.hero.reveal.visible .hero-actions,
+.hero.reveal.visible .hero-facts,
+.hero.reveal.visible .hero-visual > * {
+  animation: rise-in 0.9s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+
+.hero.reveal.visible .eyebrow {
+  animation-delay: 0.08s;
+}
+
+.hero.reveal.visible h1 {
+  animation-delay: 0.18s;
+}
+
+.hero.reveal.visible .lead {
+  animation-delay: 0.28s;
+}
+
+.hero.reveal.visible .hero-actions {
+  animation-delay: 0.38s;
+}
+
+.hero.reveal.visible .hero-facts {
+  animation-delay: 0.48s;
+}
+
+.hero.reveal.visible .hero-visual .orb-one {
+  animation-delay: 0.16s;
+}
+
+.hero.reveal.visible .hero-visual .orb-two {
+  animation-delay: 0.24s;
+}
+
+.hero.reveal.visible .hero-visual .portrait-frame {
+  animation:
+    rise-in 0.95s cubic-bezier(0.2, 0.8, 0.2, 1) both 0.22s,
+    portrait-breathe 8s ease-in-out infinite;
+}
+
+.hero.reveal.visible .hero-visual .profile-card {
+  animation:
+    rise-in 0.85s cubic-bezier(0.2, 0.8, 0.2, 1) both 0.36s,
+    float 7s ease-in-out infinite;
+}
+
+.hero.reveal.visible .hero-visual .stats-card {
+  animation:
+    rise-in 0.85s cubic-bezier(0.2, 0.8, 0.2, 1) both 0.5s,
+    float 7s ease-in-out infinite 1.2s;
+}
+
 @keyframes float {
   0%,
   100% {
@@ -1017,6 +1089,42 @@ main {
   }
   50% {
     transform: translate3d(-14px, 18px, 0) scale(1.06);
+  }
+}
+
+@keyframes rise-in {
+  from {
+    opacity: 0;
+    transform: translateY(22px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes portrait-breathe {
+  0%,
+  100% {
+    transform: translateY(0) scale(1.03);
+  }
+
+  50% {
+    transform: translateY(-6px) scale(1.06);
+  }
+}
+
+@keyframes portrait-glow {
+  0%,
+  100% {
+    transform: translate3d(-2%, -2%, 0) scale(1);
+    opacity: 0.18;
+  }
+
+  50% {
+    transform: translate3d(4%, 4%, 0) scale(1.06);
+    opacity: 0.3;
   }
 }
 
@@ -1045,12 +1153,12 @@ main {
   }
 
   .hero-visual {
-    min-height: 460px;
+    min-height: 500px;
     order: -1;
   }
 
   .portrait-frame {
-    width: min(320px, 78vw);
+    width: min(340px, 78vw);
   }
 
   .work-header,
